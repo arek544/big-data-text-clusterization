@@ -3,9 +3,9 @@ Project team: Arkadiusz Sycz, Michał Wojeciechowski, Stanisław Puchała
 
 ## Goals
 
-    Visualization and clusterization big amount of text documents. We'll use dump of Freebase [1] - base of a general-knowledge facts. Original Freebase [2] is designed as an open, community-curatedknowledge base with more than 40 million topics and over 2 billion facts.
+Visualization and clusterization big amount of text documents. We'll use dump of Freebase [1] - base of a general-knowledge facts. Original Freebase [2] is designed as an open, community-curatedknowledge base with more than 40 million topics and over 2 billion facts.
 
-    Processing will be done with the use of a multithreaded mapp reduce algorithm.
+Processing will be done with the use of a multithreaded mapp reduce algorithm.
 
 ## To do:
 1. Preprocessing:
