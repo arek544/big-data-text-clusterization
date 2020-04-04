@@ -26,7 +26,7 @@ Processing will be done with the use of a multithreaded mapp reduce algorithm.
 4. Visualization 
 5. Cluster analysis
 
-Bibliography:  
+References:  
     [1]: Data source: http://freebase-easy.cs.uni-freiburg.de/dump/  
     [2]: K. D. Bollacker, C. Evans, P. Paritosh, T. Sturge, andJ. Taylor. Freebase: a collaboratively created graphdatabase for structuring human knowledge. InSIGMOD, pages 1247–1250, 2008.  
 
