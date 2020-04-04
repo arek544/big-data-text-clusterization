@@ -1,0 +1,9 @@
+**.ipynb_checkpoints
+**__pycache__
+**.ipynb_checkpoints
+**.vscode-janus-debug
+**.vscode
+**.directory
+**.zip
+tmp
+data
