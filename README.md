@@ -34,5 +34,5 @@ Processing will be done with the use of a multithreade mapp reduce algorithm.
 5. Cluster analysis
     - KMeans
 
-## References:  
- [1]: http://www.gutenberg.org/
+References:  
+    [1]: http://www.gutenberg.org/
