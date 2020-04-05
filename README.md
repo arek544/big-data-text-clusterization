@@ -3,9 +3,7 @@ Project team: Arkadiusz Sycz, Michał Wojeciechowski, Stanisław Puchała
 
 ## Goals
 
-Visualization and clusterization big amount of text documents. We'll use dump of Freebase [1] - base of a general-knowledge facts. Original Freebase [2] is designed as an open, community-curatedknowledge base with more than 40 million topics and over 2 billion facts.
-
-Processing will be done with the use of a multithreaded mapp reduce algorithm.
+Visualization and clusterization big amount of text documents. We'll scrapp english books in txt format from Project Gutenberg web site, preprocess, vectorize and present them in spatial representation. Processing will be done with the use of a multithreade mapp reduce algorithm.
 
 ## To do:
 1. Preprocessing:
@@ -19,18 +17,19 @@ Processing will be done with the use of a multithreaded mapp reduce algorithm.
     - remove short words
     - stemming 
 2. Processing: 
-    - count occurences of words 
+    - count occurrences of words 
     - calculate TFIDF
-    - salect n top key words
+    - select n top keywords
 3. Doc2Vec
 4. Visualization 
 5. Cluster analysis
 
 References:  
-    [1]: Data source: http://freebase-easy.cs.uni-freiburg.de/dump/  
-    [2]: K. D. Bollacker, C. Evans, P. Paritosh, T. Sturge, andJ. Taylor. Freebase: a collaboratively created graphdatabase for structuring human knowledge. InSIGMOD, pages 1247–1250, 2008.  
+    [1]: Data scraper: https://gist.github.com/mbforbes/cee3fd5bb3a797b059524fe8c8ccdc2b
+    [2]: http://www.gutenberg.org/
 
 ---
 Interesting articles:  
+    https://webapps.stackexchange.com/questions/12311/how-to-download-all-english-books-from-gutenberg
     https://www.kdnuggets.com/2017/06/text-clustering-unstructured-data.html  
     https://github.com/vivekkalyanarangan30/Text-Clustering-API/  
