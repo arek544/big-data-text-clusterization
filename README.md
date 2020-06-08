@@ -23,14 +23,15 @@ Processing will be done with the use of a multithreade mapp reduce algorithm.
     - replace non-alphanum with space  
     - replace multiple spaces with single space 
     - remove stop-words
-    - stemming 
+    - stemming: (SnowballStemmer, WordNetLemmatizer)
 2. Processing: 
     - count occurrences of words 
     - calculate TFIDF
-    - select n top keywords
 3. Visualization 
+    - visualization of explained variance
     - PCA
 4. Cluster analysis
+    - selecting the number of clusters 
     - KMeans
 
 References:  
