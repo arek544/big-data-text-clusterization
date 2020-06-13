@@ -14,7 +14,7 @@ show number of words count from each files dynamically
 
 sc = SparkContext(appName="PysparkStreaming")
 ssc = StreamingContext(sc, 3)   # Streaming will execute in each 3 seconds
-lines = ssc.textFileStream('log/')  #'log/ mean directory name
+lines = ssc.textFileStream('to_stream/')  #'log/ mean directory name
 counts = lines.flatMap(lambda line: line.split(" ")) \
                         .map(lambda x: (x, 1)) \
                         .reduceByKey(lambda a, b: a + b)
