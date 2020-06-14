@@ -29,4 +29,8 @@ To run script from Docker Quickstart terminal
    docker exec -it spark <path to script>
    ```
 
-
+# Install Gutenberg
+   ```bash
+   docker exec -u 0 -it spark sudo apt-get update
+   docker exec -u 0 -it spark sudo apt-get install libdb++-dev
+   ```
