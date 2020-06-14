@@ -21,3 +21,12 @@
    ```
 8. Open Kitematic and manage container (launch notebooks, run scripts etc.)
 9. To access jupyter server runing inside container you have to use IP address of docker (192.168.99.100)
+
+---
+
+To run script from Docker Quickstart terminal
+   ```bash
+   docker exec -it spark <path to script>
+   ```
+
+
