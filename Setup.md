@@ -14,7 +14,7 @@
    ```
 6. Run command:
    ```bash
-   docker run -it -p 8888:8888 -v "$(pwd):/home/jovyan/work" jupyter/pyspark-notebook  --name spark
+   docker run --name spark -it -p 8888:8888 -v "$(pwd):/home/jovyan/work" jupyter/pyspark-notebook  
    ```
 7. To stop docker: 
    ```bash
