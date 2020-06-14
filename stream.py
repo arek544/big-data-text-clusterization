@@ -13,6 +13,7 @@
 
 import os
 import re
+import numpy as np
 import unidecode
 from pyspark.sql.types import StringType, ArrayType
 from pyspark import SparkContext, SparkConf, Row
@@ -21,6 +22,7 @@ from pyspark.sql import SparkSession
 from pyspark.ml.feature import Tokenizer, StopWordsRemover,HashingTF, IDF
 from pyspark.ml import Pipeline
 from nltk.stem.snowball import SnowballStemmer
+import matplotlib.pyplot as plt
 
 def list_stemmer(words):
     stemmer = SnowballStemmer(language='english')
@@ -40,7 +42,7 @@ def process_rdd(text_id,text):
     row = Row(id=text_id, text=text)
     rdd = sc.parallelize([row])
     df = rdd.flatMap(lambda x: (x,)).toDF() 
-    df.show()
+
     user_def_fun = udf(f=clean, returnType=StringType())
 
     df = df.withColumn("cleaned", user_def_fun("text"))
@@ -48,7 +50,7 @@ def process_rdd(text_id,text):
 
     tokenizer = Tokenizer(inputCol="cleaned", outputCol="tokens")
     df = tokenizer.transform(df)
-    df.show()
+
     df = df.drop('cleaned')
     
 
@@ -84,6 +86,13 @@ spark = SparkSession(sparkContext=sc)
 
 fileDirectory = 'data_small/'
 
+plt.axis([0, 10, 0, 1])
+i = 0
 for fname in os.listdir(fileDirectory):
+    y = np.random.random()
+    plt.scatter(i, y)
+    plt.pause(0.05)
+    i += 1
     text = open(fileDirectory+fname).read()
     process_rdd(fname.replace('.txt',''),text)
+plt.show()
