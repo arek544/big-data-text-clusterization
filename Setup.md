@@ -1,3 +1,4 @@
+# Docker 
 1. Install Docker tool (or Docker desctop)  
    Follow the instructions:
    - Windows: https://docs.docker.com/toolbox/toolbox_install_windows/#how-to-uninstall-toolbox
@@ -19,12 +20,11 @@
    ```bash
    docker stop spark
    ```
-8. Open Kitematic and manage container (launch notebooks, run scripts etc.)
-9. To access jupyter server runing inside container you have to use IP address of docker (192.168.99.100)
 
----
+Open Kitematic and manage container (launch notebooks, run scripts etc.)   
+To access jupyter server runing inside container you have to use IP address of docker (192.168.99.100)   
 
-To run script from Docker Quickstart terminal
+To run script from Docker Quickstart terminal:  
    ```bash
    docker exec -it spark <path to script>
    ```
