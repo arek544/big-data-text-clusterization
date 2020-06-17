@@ -5,6 +5,12 @@ Project team: Arkadiusz Sycz, Michał Wojeciechowski, Stanisław Puchała
 
 Visualization and clusterization big amount of text documents. 
 
+## technology stack
+- Spark-2.4.5
+- nltk
+- gutenberg API
+- Docker(for Linux environment)
+
 ### Steps:
 
 1. Scrapp english books in txt format from Project Gutenberg web site [1].
