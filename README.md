@@ -5,9 +5,10 @@ Project team: Arkadiusz Sycz, Michał Wojeciechowski, Stanisław Puchała
 
 Visualization and clusterization big amount of text documents. 
 
-## technology stack
+## Technology stack
 - Spark-2.4.5
 - nltk
+- sklearn
 - gutenberg API
 - Docker(for Linux environment)
 
